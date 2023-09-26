@@ -1,22 +1,19 @@
 import java.util.Scanner;
 
-class Solution{
-    static String oddEven(int N){
-        if (N % 2 == 0) {
-            
-            return "even";
-        
-        }else{
-            return "odd";
-        }
-        
-        
-        // code here
-    }
-    public static void main(String args[]){
+public class second {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int p = sc.nextInt();
-        System.out.println( oddEven(p) ); 
+        int number = sc.nextInt();
         
+         
+        if (number % 2 == 0) {
+            System.out.println(number + " is even.");
+        } else {
+            System.out.println(number + " is odd.");
+        }
+        sc.close();
     }
+
+    
+    
 }
